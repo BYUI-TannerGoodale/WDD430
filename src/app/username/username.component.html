@@ -1,0 +1,15 @@
+<input
+type="text"
+class="form-control"
+(keyup)='onCheckInput()'
+[(ngModel)]="userName">
+
+<p>{{userName}}</p>
+
+<button
+type="button"
+class="btn btn-primary"
+[disabled]='!userHasName'
+(click)='clearUserNameInput()'>
+Reset User Name
+</button>
